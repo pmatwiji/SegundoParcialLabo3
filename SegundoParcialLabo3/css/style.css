@@ -1,0 +1,204 @@
+/* #region spinner */
+.container-spinner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.651);
+}
+.container-spinner img {
+    width: 200px;
+    height: 200px;
+}
+
+/* #endregion */
+
+/*#region Tabla */
+table{
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 2%;
+}
+th,td{
+    text-align: center;
+    padding: 8px;
+}
+
+tr:nth-child(even){background-color: whitesmoke;}
+
+th{
+    background-color: lightseagreen;
+    color: white;
+}
+
+/*#endregion*/
+
+/* #region Nav */
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.agregar {
+    border-radius: 5px;
+    width: 20%;
+    height: 36px;
+    margin-bottom: 2%;
+    font-size: 1em;
+    font-weight: 600;
+    color: whitesmoke;
+    background: lightseagreen;
+    transition: all ease 0.1s;
+    
+}
+
+.agregar:active {
+    background: rgb(16, 90, 86);
+}
+
+.agregar:focus {
+    border: none;
+}
+
+/*#endregion*/
+
+.filtros, .campos{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+h1 {
+    width: 100%;
+    text-align: center;
+}
+
+/* #region carga */
+.container-carga {
+    width: 35%;
+    margin-bottom: 2%;
+    min-width: 400px;
+    background: whitesmoke;
+    display: block;
+}
+
+
+.backdrop {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.623);
+    z-index: 2;
+}
+
+.botonCerrar{
+  width: 7%;
+  background-color:red;
+  color: white;
+  padding: 10px 20px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  font-size: 125%;
+  transition: all ease 0.1s;
+  float: right;
+}
+
+.botonCerrar:active {
+    background-color:rgb(153, 0, 0);
+}
+
+.botonAgregar, .botonCancelar, .botonEliminar, .botonModificar, .eliminar {
+    width: 45%;
+    margin-top: 10px;
+    padding: 10px;
+    color: whitesmoke;
+    font-size: 1em;
+    font-weight: 600;
+    border: none;
+    border-radius: 5px;
+    transition: ease all 0.2s;
+}
+.botonAgregar, .botonModificar {
+    background: rgb(23, 146, 23);
+}
+
+.botonAgregar:active, .botonModificar:active {
+    background: rgb(19, 90, 19);
+}
+
+.botonCancelar, .botonEliminar, .eliminar  {
+    background: red;
+}
+
+.botonCancelar:active, .botonEliminar:active {
+    background: rgb(122, 2, 2);
+}
+
+.form-agregar {
+    padding: 5%;
+    
+}
+
+.form-agregar input, .form-agregar select{
+    width: 99%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.form-agregar input[type=text]:focus{
+    outline-color: rgba(0,0,0,0)
+}
+
+.form-agregar label {
+    margin: 2px 0;
+}
+
+.error {
+    border: red 5px solid;
+}
+
+.container-botones, .container-modificaciones {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container-modificaciones {
+    display: none;
+}
+
+
+#selectAuto, #selectCamioneta{
+    display: none;
+    width: 100%;
+    height: 100%;
+}
+
+#cuatroXcuatro {
+    width: auto;
+}
+
+
+
+
+
+/* #endregion */
